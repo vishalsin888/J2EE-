@@ -1,0 +1,42 @@
+package com.prod;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+@WebServlet("/product")
+public class Product extends HttpServlet {
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		PrintWriter out = response.getWriter();
+		response.setContentType("text/html");
+		String pname = request.getParameter("pname");
+		String qty = request.getParameter("qty");
+		String btn = request.getParameter("btn");
+		//Session   keyboard 11
+		HttpSession session = request.getSession();
+		if(btn.equals("Add")) {
+			session.setAttribute(pname, qty);
+			out.print("<h2>Product "+pname+" Added</h2>");
+		}else if(btn.equals("Update")) {
+			
+		}else if(btn.equals("Delete")) {
+			
+		}else if(btn.equals("GetAll")) {
+			
+		}
+		
+		RequestDispatcher rd = request.getRequestDispatcher("index.html");
+		rd.include(request, response);
+		
+		
+	}
+
+}

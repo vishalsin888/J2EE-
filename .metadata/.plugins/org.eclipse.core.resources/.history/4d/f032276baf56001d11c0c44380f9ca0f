@@ -1,0 +1,10 @@
+.my-lineheight{
+      line-height: 3;
+      color: white;
+      font-size: 15px;
+      font-weight: 700;
+  }
+  .logo{
+      width: 200px;
+height: 45px;
+  }

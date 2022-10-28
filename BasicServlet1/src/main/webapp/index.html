@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+<script src =  "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<form action="signup" method="get">
+	<div>
+		<span>Name :</span><input name="username" type="text" placeholder="Please Enter Name"/>
+	</div>
+	<div>
+		<span>Email :</span><input name="email" type="text" placeholder="Please Enter Email"/>
+	</div>
+	<div>
+		<span>Password :</span><input name="password" type="password"/>
+	</div>
+	<div>
+		<span>Role :</span>
+		<select name="role">
+			<option value="Admin">Admin</option>
+			<option value="User">User</option>
+		</select>
+	</div>
+	<div>
+		<input type="submit" value="Signup"/>
+	</div>
+	<div>
+	<a href="login.html">Already Registered? Login Here</a>
+	</div>
+</form>
+</body>
+</html>

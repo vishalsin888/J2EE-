@@ -1,0 +1,14 @@
+127.0.0.1 - - [15/Oct/2022:16:41:41 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [15/Oct/2022:16:41:42 +0530] "GET /MVCApp/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [15/Oct/2022:16:41:42 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [15/Oct/2022:16:42:17 +0530] "GET /MVCApp/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [15/Oct/2022:16:42:19 +0530] "GET /MVCApp/index.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [15/Oct/2022:16:42:30 +0530] "GET /MVCApp/signup?empName=Vishal&email=vishalsin888%40gmail.com1&password=11111&role=Admin HTTP/1.1" 200 611
+0:0:0:0:0:0:0:1 - - [15/Oct/2022:16:42:38 +0530] "GET /MVCApp/login?empName=Vishal&password=11111&role=Admin HTTP/1.1" 200 161
+0:0:0:0:0:0:0:1 - - [15/Oct/2022:16:42:43 +0530] "GET /MVCApp/getAllEmps? HTTP/1.1" 200 726
+0:0:0:0:0:0:0:1 - - [15/Oct/2022:16:42:51 +0530] "GET /MVCApp/EmpSearch.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [15/Oct/2022:16:42:56 +0530] "GET /MVCApp/getEmp?ename=Vishal HTTP/1.1" 200 569
+0:0:0:0:0:0:0:1 - - [15/Oct/2022:16:43:06 +0530] "GET /MVCApp/getEmp?ename= HTTP/1.1" 200 149
+0:0:0:0:0:0:0:1 - - [15/Oct/2022:16:43:16 +0530] "GET /MVCApp/getEmp?ename=Vis HTTP/1.1" 200 149
+0:0:0:0:0:0:0:1 - - [15/Oct/2022:16:43:21 +0530] "GET /MVCApp/getEmp?ename=Vishal HTTP/1.1" 200 569
+0:0:0:0:0:0:0:1 - - [15/Oct/2022:16:43:26 +0530] "GET /MVCApp/getEmp?ename= HTTP/1.1" 200 149

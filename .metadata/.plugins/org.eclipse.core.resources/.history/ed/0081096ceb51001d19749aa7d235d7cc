@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="product">
+		<div>
+			<span>Product Name </span><span><input type="text"
+				name="pname"></span>
+		</div>
+		<div>
+			<span>Product Name </span><span><input type="text"
+				name="qty"></span>
+		</div>
+		<div>
+			<input type="submit" value="Add"> 
+			<input type="submit"value="Update">
+			<input type="submit" value="Delete">
+			<input type="submit" value="getAll">
+		</div>
+	</form>
+</body>
+</html>
