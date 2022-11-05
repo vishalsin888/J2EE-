@@ -23,8 +23,17 @@ public class Product extends HttpServlet {
 		String pname = request.getParameter("pname");
 		String qty = request.getParameter("qty");
 		String btn = request.getParameter("btn");
-		//Session   keyboard 11
-		String type = "Cookie";
+		request.setAttribute("pname", pname);
+		request.setAttribute("qty", qty);
+		request.setAttribute("btn", btn);
+		HttpSession session1 = request.getSession();
+		session1.setAttribute("pname", pname);
+		session1.setAttribute("qty", qty);
+		session1.setAttribute("btn", btn);
+		RequestDispatcher rd = request.getRequestDispatcher("display.jsp");
+		rd.forward(request, response);
+		//Session   keyboard 11 
+		String type = "aaa";
 		
 		if(type.equals("Session")) {
 			HttpSession session = request.getSession();
@@ -53,8 +62,8 @@ public class Product extends HttpServlet {
 				out.print("<h2>Session Timed Out<h2>");
 			}
 			
-			RequestDispatcher rd = request.getRequestDispatcher("index.html");
-			rd.include(request, response);
+//			RequestDispatcher rd = request.getRequestDispatcher("index.html");
+//			rd.include(request, response);
 			
 		}else if(type.equals("Cookie")) {
 			System.out.println("inside cookie");
@@ -88,9 +97,9 @@ public class Product extends HttpServlet {
 				out.print("<h2>Session Timed Out<h2>");
 			}
 			
-			RequestDispatcher rd = request.getRequestDispatcher("index.html");
-			rd.include(request, response);
-			
+//			RequestDispatcher rd = request.getRequestDispatcher("index.html");
+//			rd.include(request, response);
+//			
 		}
 		
 	}
